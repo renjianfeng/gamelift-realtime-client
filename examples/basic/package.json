@@ -1,0 +1,22 @@
+{
+  "name": "gamelift-realtime-client-browser-example",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity": "^3.141.0",
+    "@aws-sdk/client-gamelift": "^3.141.0",
+    "@aws-sdk/credential-provider-cognito-identity": "^3.141.0",
+    "buffer": "^6.0.3",
+    "gamelift-realtime-client": "file:../.."
+  }
+}

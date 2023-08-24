@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+	"target": "es6",
+	"lib": [ "es2015", "dom" ],
+	"module": "es6",
+	"moduleResolution": "node",
+	"sourceMap": true,
+	"declaration": true,
+	"outDir": "lib",
+	"rootDir": "src",
+	"strict": true,
+	"esModuleInterop": true,
+  "allowJs": true,
+	// need to override the buffer module defs to be able to use in the browser
+	"paths": { "buffer" : ["./buffer-override.d.ts"] }
+    },
+    "include": [ "src/**/*.ts" ],
+    "exclude": [ "example", "examples" ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "gamelift-realtime-client",
+  "version": "0.0.1",
+  "keywords": [],
+  "author": "Code on Canvas",
+  "license": "MIT",
+  "description": "",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://codeberg.org/CodeOnCanvas/gamelift-realtime-client.git"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "tsc && cpy proto ../lib/ --cwd=src"
+  },
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "google-protobuf": "^3.15.5",
+    "isomorphic-ws": "^5.0.0",
+    "strongly-typed-events": "^2.1.5",
+    "ws": "^8.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.35",
+    "@types/ws": "^8.5.3",
+    "cpy-cli": "^4.1.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "main": "./lib/index.js",
+  "browser": "./lib/index.js",
+  "types": "./lib/index.d.ts"
+}
